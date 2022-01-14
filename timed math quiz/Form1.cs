@@ -15,6 +15,7 @@ namespace timed_math_quiz
         public Form1()
         {
             InitializeComponent();
+            timer1.Stop();
         }
 
         Random randomizer = new Random();
@@ -123,6 +124,7 @@ namespace timed_math_quiz
         }
         private bool CheckTheAnswer()
         {
+
             if ((addend1 + addend2 == sum.Value)
          && (minuend - subtrahend == difference.Value)
          && (multiplicand * multiplier == product.Value)
